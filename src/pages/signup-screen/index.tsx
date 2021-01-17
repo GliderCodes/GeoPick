@@ -4,15 +4,7 @@ import { auth } from "../../firebase";
 import { LANDING } from "../../constants/routes";
 import { createStore, StateMachineProvider } from "little-state-machine";
 import SignupForm from "./SignupForm";
-
-createStore({
-  details: {
-    email: "",
-    passwprd: "",
-    username: "",
-    occupation: "",
-  },
-});
+import { useForm } from "react-hook-form";
 
 function Signup(props: RouteChildrenProps) {
   if (auth.checkUserLoggedIn()) props.history.push(LANDING);
