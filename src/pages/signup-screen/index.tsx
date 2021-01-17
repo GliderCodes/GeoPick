@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, RouteChildrenProps } from "react-router-dom";
+import { RouteChildrenProps } from "react-router-dom";
 import { auth } from "../../firebase";
 import { LANDING } from "../../constants/routes";
 import { createStore, StateMachineProvider } from "little-state-machine";
